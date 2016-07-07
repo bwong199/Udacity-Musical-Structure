@@ -15,55 +15,65 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Song 1"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" android:layout_marginTop="36dp"/>
+        android:id="@+id/song1Label"
+        android:layout_alignTop="@+id/picassoLibraryLabel1" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Song 2"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView" android:layout_alignParentLeft="true"
+        android:id="@+id/song2Label"
+        android:layout_below="@+id/song1Label" android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" android:layout_marginTop="60dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Song 3"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2" android:layout_alignParentLeft="true"
+        android:id="@+id/song3Label"
+        android:layout_below="@+id/song2Label" android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" android:layout_marginTop="60dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Music Library View"
-        android:id="@+id/textView4"
-        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        android:id="@+id/musicLibraryTitleLabel"
+        android:layout_below="@+id/appTitle" android:layout_centerHorizontal="true"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Song&apos;s Album Cover Goes Here with Picasso"
-        android:id="@+id/textView8" android:layout_alignTop="@+id/textView"
-        android:layout_alignLeft="@+id/textView4" android:layout_alignStart="@+id/textView4"/>
+        android:id="@+id/picassoLibraryLabel1"
+        android:layout_below="@+id/musicLibraryTitleLabel"
+        android:layout_alignLeft="@+id/musicLibraryTitleLabel"
+        android:layout_alignStart="@+id/musicLibraryTitleLabel" android:layout_marginTop="27dp"/>
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
               android:textAppearance="?android:attr/textAppearanceLarge"
               android:text="Song&apos;s Album Cover Goes Here with Picasso"
-              android:id="@+id/textView9"
-              android:layout_alignTop="@+id/textView2" android:layout_alignLeft="@+id/textView8"
-              android:layout_alignStart="@+id/textView8"/>
+              android:id="@+id/picassoLibraryLabel2"
+              android:layout_alignTop="@+id/song2Label"
+              android:layout_alignLeft="@+id/musicLibraryTitleLabel"
+              android:layout_alignStart="@+id/musicLibraryTitleLabel"/>
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
               android:textAppearance="?android:attr/textAppearanceLarge"
               android:text="Song&apos;s Album Cover Goes Here with Picasso"
-              android:id="@+id/textView10"
-              android:layout_alignTop="@+id/textView3" android:layout_alignLeft="@+id/textView9"
-              android:layout_alignStart="@+id/textView9"/>
+              android:id="@+id/picassoLibraryLabel3"
+              android:layout_alignTop="@+id/song3Label" android:layout_alignLeft="@+id/picassoLibraryLabel2"
+              android:layout_alignStart="@+id/picassoLibraryLabel2"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="To Detail View"
         android:id="@+id/toDetailView" android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" android:layout_marginBottom="83dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UdacityMusicalStructure"
+        android:id="@+id/appTitle"
+        android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 </RelativeLayout>

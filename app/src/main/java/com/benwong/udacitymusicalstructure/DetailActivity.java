@@ -9,6 +9,7 @@ import android.widget.Button;
 public class DetailActivity extends AppCompatActivity {
 
     private Button toMusicLibraryBtn;
+    private Button toLyricsViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +18,20 @@ public class DetailActivity extends AppCompatActivity {
 
         toMusicLibraryBtn = (Button)findViewById(R.id.toMusicLibrary);
 
-
+        toLyricsViewBtn = (Button)findViewById(R.id.toLyricsView);
 
         toMusicLibraryBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+        toLyricsViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), LyricsActivity.class);
                 startActivity(i);
             }
         });
